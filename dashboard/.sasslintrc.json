@@ -1,0 +1,32 @@
+{
+  "files": {
+    "include": "src/assets/scss/**/*.s+(a|c)ss",
+    "ignore": [
+      "node_modules/**/*.scss"
+    ]
+  },
+  "options": {
+    "max-warnings": 0
+  },
+  "rules": {
+    "property-sort-order": [
+      1,
+      {
+        "order": "smacss"
+      }
+    ],
+    "hex-notation": [
+      1,
+      {
+        "style": "uppercase"
+      }
+    ],
+    "no-color-literals": 2,
+    "nesting-depth": [
+      1,
+      {
+        "max-depth": 5
+      }
+    ]
+  }
+}

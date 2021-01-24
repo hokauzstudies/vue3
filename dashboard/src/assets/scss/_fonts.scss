@@ -1,0 +1,17 @@
+$fonts: (
+  'JosefinLight': 'assets/fonts/Josefin_Sans/JosefinSans-Light.ttf',
+  'Josefin': 'assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf',
+  'JosefinMedium': 'assets/fonts/Josefin_Sans/JosefinSans-Medium.ttf',
+  'JosefinBold': 'assets/fonts/Josefin_Sans/JosefinSans-Bold.ttf',
+);
+
+@mixin new-font($name, $path) {
+  @font-face {
+    font-family: $name;
+    src: url($path);
+  }
+}
+
+@each $name, $path in $fonts {
+  @include new-font($name, $path);
+}
